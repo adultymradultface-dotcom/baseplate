@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: baseplate-relay
+    runtime: node
+    plan: free
+    rootDir: server
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /healthz
